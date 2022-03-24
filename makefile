@@ -4,3 +4,9 @@ install:
 
 tests:
 	pytest
+
+check-style:
+	flake8
+
+isort:
+	isort .

@@ -1,5 +1,7 @@
-from .solution import findShortest
 import pytest
+
+from .solution import findShortest
+
 
 def hackerrank_main(test_case):
     inputs = test_case.splitlines()
@@ -23,7 +25,7 @@ TEST_CASE_0 = """4 3
 1 2
 1 3
 4 2
-1 2 1 1 
+1 2 1 1
 1"""
 
 TEST_CASE_1 = """4 3
@@ -32,6 +34,7 @@ TEST_CASE_1 = """4 3
 4 2
 1 2 3 4
 2"""
+
 
 @pytest.mark.parametrize('test_case, solution', [
     (TEST_CASE_0, 1),
