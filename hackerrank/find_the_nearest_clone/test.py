@@ -1,23 +1,23 @@
 import pytest
 
-from .solution import findShortest
+from .solution import find_shortest
 
 
 def hackerrank_main(test_case):
-    inputs = test_case.splitlines()
-    graph_nodes, graph_edges = map(int, inputs.pop(0).split())
+    input_lines = test_case.splitlines()
+    graph_nodes, graph_edges = map(int, input_lines.pop(0).split())
 
     graph_from = [0] * graph_edges
     graph_to = [0] * graph_edges
 
     for i in range(graph_edges):
-        graph_from[i], graph_to[i] = map(int, inputs.pop(0).split())
+        graph_from[i], graph_to[i] = map(int, input_lines.pop(0).split())
 
-    ids = list(map(int, inputs.pop(0).rstrip().split()))
+    ids = list(map(int, input_lines.pop(0).rstrip().split()))
 
-    val = int(inputs.pop(0))
+    val = int(input_lines.pop(0))
 
-    ans = findShortest(graph_nodes, graph_from, graph_to, ids, val)
+    ans = find_shortest(graph_nodes, graph_from, graph_to, ids, val)
     return ans
 
 
