@@ -18,19 +18,19 @@ TEST_CASE_0 = """6 4
 give me one grand today night
 give one grand today"""
 
-TEST_CASE_1 = """6 5
+TEST_CASE_20 = """6 5
 two times three is not four
 two times two is four"""
 
-TEST_CASE_2 = """7 4
+TEST_CASE_21 = """7 4
 ive got a lovely bunch of coconuts
 ive got some coconuts"""
 
 
 @pytest.mark.parametrize('test_case, solution', [
     (TEST_CASE_0, 'Yes'),
-    (TEST_CASE_1, 'No'),
-    (TEST_CASE_2, 'No'),
+    (TEST_CASE_20, 'No'),
+    (TEST_CASE_21, 'No'),
 ])
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution
