@@ -5,9 +5,9 @@ from .solution import counting_valleys
 
 def hackerrank_main(test_case):
     input_lines = test_case.splitlines()
-    steps = int(input_lines.pop(0).strip())
+    _ = int(input_lines.pop(0).strip())
     path = input_lines.pop(0)
-    return counting_valleys(steps, path)
+    return counting_valleys(path)
 
 
 TEST_CASE_0 = """8

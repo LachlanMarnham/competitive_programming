@@ -1,4 +1,4 @@
-def counting_valleys(steps, path):
+def counting_valleys(path):
     elevation = 0
     valleys = 0
 
