@@ -1,6 +1,6 @@
 import pytest
 
-from .solution import arrayManipulation
+from .solution import array_manipulation
 
 
 def hackerrank_main(test_case):
@@ -14,7 +14,7 @@ def hackerrank_main(test_case):
     for _ in range(m):
         queries.append(list(map(int, input_lines.pop(0).rstrip().split())))
 
-    return arrayManipulation(n, queries)
+    return array_manipulation(n, queries)
 
 
 TEST_CASE_0 = """5 3
