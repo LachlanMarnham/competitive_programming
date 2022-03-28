@@ -6,8 +6,8 @@ from .solution import jumping_on_clouds
 def hackerrank_main(test_case):
     input_lines = test_case.splitlines()
     _ = int(input_lines.pop(0).strip())
-    c = list(map(int, input_lines.pop(0).rstrip().split()))
-    return jumping_on_clouds(c)
+    clouds = list(map(int, input_lines.pop(0).rstrip().split()))
+    return jumping_on_clouds(clouds)
 
 
 TEST_CASE_0 = """7
