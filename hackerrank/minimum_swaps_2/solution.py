@@ -1,5 +1,4 @@
 class LookupList(list):
-
     def __init__(self, arr):
         self._val_idx_map = {val: idx for idx, val in enumerate(arr)}
         self._swaps = 0

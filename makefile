@@ -6,6 +6,8 @@ tests:
 	pytest
 
 check-style:
+	isort . -c
+	black .
 	flake8
 
 isort:

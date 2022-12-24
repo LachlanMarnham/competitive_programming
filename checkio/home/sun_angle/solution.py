@@ -3,7 +3,6 @@ from typing import Union
 
 
 class Time(datetime.time):
-
     def __sub__(self, other):
         if type(self) != type(other):
             message = f'unsupported operand type(s) for -: "{type(self)}" and "{type(other)}"'
@@ -15,8 +14,8 @@ class Time(datetime.time):
 
 
 def sun_angle(time: str) -> Union[int, str]:
-    sunrise = Time.fromisoformat('06:00')
-    sunset = Time.fromisoformat('18:00')
+    sunrise = Time.fromisoformat("06:00")
+    sunset = Time.fromisoformat("18:00")
     degrees_per_minute = 180 / (sunset - sunrise)
 
     time_of_day = Time.fromisoformat(time)

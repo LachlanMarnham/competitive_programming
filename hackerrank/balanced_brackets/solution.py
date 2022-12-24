@@ -1,10 +1,9 @@
 from collections import deque
 
-
 OPEN_CLOSED_MAP = {
-    '(': ')',
-    '[': ']',
-    '{': '}',
+    "(": ")",
+    "[": "]",
+    "{": "}",
 }
 
 
@@ -22,7 +21,7 @@ def is_balanced(string):
         # we are closing brackets which have
         # not been opened yet
         elif not stack:
-            return 'NO'
+            return "NO"
         # Every time we see a close bracket
         # with a non-empty stack, make sure
         # it is the same species as the item
@@ -31,12 +30,12 @@ def is_balanced(string):
             expected_open = stack.pop()
             expected_close = OPEN_CLOSED_MAP[expected_open]
             if char != expected_close:
-                return 'NO'
+                return "NO"
 
     # Dangling brackets: if we reach the end of string
     # with characters left on the stack, sting must be
     # un-balanced
     if stack:
-        return 'NO'
+        return "NO"
 
-    return 'YES'
+    return "YES"

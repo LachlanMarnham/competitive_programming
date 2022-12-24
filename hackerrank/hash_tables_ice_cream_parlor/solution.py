@@ -33,8 +33,8 @@ def what_flavours(cost, money):
     # The smaller of the indices is meant to appear first
     # in the result
     if idx_1 < idx_2:
-        message = f'{idx_1} {idx_2}'
+        message = f"{idx_1} {idx_2}"
     else:
-        message = f'{idx_2} {idx_1}'
+        message = f"{idx_2} {idx_1}"
 
     return message

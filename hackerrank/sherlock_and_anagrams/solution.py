@@ -6,13 +6,13 @@ def generate_substrings(s):
     sub_strings = []
     for i in range(len_s):
         for j in range(len_s - i):
-            new_substring = s[i:i + j + 1]
+            new_substring = s[i : i + j + 1]
             sub_strings.append(new_substring)
     return sub_strings
 
 
 def get_number_of_pairs(counter):
-    """ Counter maps sorted_substring -> instances(sorted_substring).
+    """Counter maps sorted_substring -> instances(sorted_substring).
     for a substring occurs i times, the number of anagrams is the sum of
     all of the integers from 1 to i-1 (inclusive). Why is this? Imagine
     a collection of i identical items, then the problem reduces to the
@@ -27,10 +27,10 @@ def get_number_of_pairs(counter):
 
 
 def gauss(n):
-    """ There is a theorem due to Gauss that the sum of
+    """There is a theorem due to Gauss that the sum of
     the numbers on the interval [1, n] is n * (n + 1) / 2.
     The solution will always be an integer, so we use integer
-    division to prevent the int -> float type conversion. """
+    division to prevent the int -> float type conversion."""
     return n * (n + 1) // 2
 
 

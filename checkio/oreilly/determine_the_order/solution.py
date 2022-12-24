@@ -1,10 +1,10 @@
 def determine_order(data):
-    result = ''
+    result = ""
 
     # Create a list of all unique letters which
     # appear somewhere in data, sorted in
     # alphabetical order
-    letters = sorted(set(''.join(data)))
+    letters = sorted(set("".join(data)))
 
     while letters:
         # We know a letter is next in the alphabet
@@ -16,6 +16,6 @@ def determine_order(data):
             if all(word.startswith(letter) or letter not in word for word in data):
                 result += letter
                 letters.remove(letter)
-                data = [word.replace(letter, '') for word in data]
+                data = [word.replace(letter, "") for word in data]
                 break
     return result

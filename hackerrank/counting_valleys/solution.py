@@ -5,7 +5,7 @@ def counting_valleys(path):
     for this_step in path:
         # Increment/decrement the elevation depending
         # on the direction of the current step
-        if this_step == 'U':
+        if this_step == "U":
             elevation += 1
             if elevation == 0:
                 # If we are currently at sea-level,

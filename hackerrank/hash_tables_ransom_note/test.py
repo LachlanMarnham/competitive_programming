@@ -27,10 +27,13 @@ ive got a lovely bunch of coconuts
 ive got some coconuts"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_0, 'Yes'),
-    (TEST_CASE_20, 'No'),
-    (TEST_CASE_21, 'No'),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (TEST_CASE_0, "Yes"),
+        (TEST_CASE_20, "No"),
+        (TEST_CASE_21, "No"),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution

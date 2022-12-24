@@ -11,7 +11,7 @@ def plus_minus(arr):
             zeros += 1
 
     return [
-        f'{positives/length:.6f}',
-        f'{negatives/length:.6f}',
-        f'{zeros/length:.6f}',
+        f"{positives/length:.6f}",
+        f"{negatives/length:.6f}",
+        f"{zeros/length:.6f}",
     ]

@@ -109,10 +109,13 @@ Buzz
 Fizz"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (INPUT_0, OUTPUT_0),
-    (INPUT_1, OUTPUT_1),
-    (INPUT_2, OUTPUT_2),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (INPUT_0, OUTPUT_0),
+        (INPUT_1, OUTPUT_1),
+        (INPUT_2, OUTPUT_2),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution.splitlines()
