@@ -10,16 +10,16 @@ def hackerrank_main(test_case):
     return plus_minus(arr)
 
 
-TEST_CASE_0 = """6
+TEST_CASE_1 = """6
 -4 3 -9 0 4 1"""
 
-TEST_CASE_1 = """8
+TEST_CASE_11 = """8
 1 2 3 -1 -2 -3 0 0"""
 
 
 @pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_0, ['0.500000', '0.333333', '0.166667']),
-    (TEST_CASE_1, ['0.375000', '0.375000', '0.250000']),
+    (TEST_CASE_1, ['0.500000', '0.333333', '0.166667']),
+    (TEST_CASE_11, ['0.375000', '0.375000', '0.250000']),
 ])
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution
