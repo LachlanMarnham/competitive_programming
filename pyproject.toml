@@ -9,7 +9,7 @@ repository="git@github.com:LachlanMarnham/competitive_programming.git"
 homepage="https://github.com/LachlanMarnham/competitive_programming"
 
 [tool.poetry.dependencies]
-python = "~3.7"
+python = "~3.10"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0"
