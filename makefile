@@ -12,3 +12,9 @@ check-style:
 
 isort:
 	isort .
+
+add:
+	mkdir $(dir)
+	touch $(dir)/__init__.py
+	touch $(dir)/test.py
+	touch $(dir)/solution.py
