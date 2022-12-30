@@ -2,21 +2,6 @@ import pytest
 
 from .solution import palindrome_index
 
-# def test(test_case, solution):
-#     assert hackerrank_main(test_case) == solution
-#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-#     q = int(input().strip())
-
-#     for q_itr in range(q):
-#         s = input()
-
-#         result = palindrome_index(s)
-
-#         fptr.write(str(result) + '\n')
-
-#     fptr.close()
-
 
 def hackerrank_main(test_case):
     input_lines = test_case.splitlines()
