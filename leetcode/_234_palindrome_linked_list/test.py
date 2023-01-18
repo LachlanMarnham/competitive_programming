@@ -1,11 +1,15 @@
 import pytest
 
-from .solution import ListNode, Solution 
+from .solution import ListNode, Solution
 
-@pytest.mark.parametrize('input, output', (
-    ([1,2,2,1], True),
-    ([1,2], False),
-))
+
+@pytest.mark.parametrize(
+    "input, output",
+    (
+        ([1, 2, 2, 1], True),
+        ([1, 2], False),
+    ),
+)
 def test(input, output):
     tail = head = ListNode(val=input.pop(0))
     for val in input:
