@@ -1,7 +1,4 @@
-from collections import (
-    defaultdict,
-    deque,
-)
+from collections import defaultdict, deque
 from dataclasses import dataclass
 
 
@@ -63,4 +60,4 @@ class Graph:
                 queue.append(neighbour_item)
 
         result = self._build_result_list(start_node, visited)
-        return ' '.join(str(val) for val in result)
+        return " ".join(str(val) for val in result)

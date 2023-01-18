@@ -15,7 +15,7 @@ def check_magazine(magazine, note):
     if not note_words.issubset(magazine_words):
         # The magazine has a smaller vocabulary
         # than the note
-        return 'No'
+        return "No"
     else:
         note_word_frequency = build_frequency_map(note)
         magazine_word_frequency = build_frequency_map(magazine)
@@ -26,8 +26,8 @@ def check_magazine(magazine, note):
                 # The magazine has all the required words,
                 # but at least one of them doesn't occur enough
                 # times
-                return 'No'
+                return "No"
 
         # All words from the note occur in the magazine, and
         # with the required frequency
-        return 'Yes'
+        return "Yes"

@@ -47,10 +47,13 @@ TEST_CASE_8 = """1
 2"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_0, ['6 6 -1', '-1 6']),
-    (TEST_CASE_7, ['6 12 18 6 -1']),
-    (TEST_CASE_8, ['6 12 18 6 -1 -1']),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (TEST_CASE_0, ["6 6 -1", "-1 6"]),
+        (TEST_CASE_7, ["6 12 18 6 -1"]),
+        (TEST_CASE_8, ["6 12 18 6 -1 -1"]),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution

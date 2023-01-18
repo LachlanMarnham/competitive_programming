@@ -1,9 +1,6 @@
 import pytest
 
-from .solution import (
-    BinarySearchTree,
-    lca,
-)
+from .solution import BinarySearchTree, lca
 
 
 def hackerrank_main(test_case):
@@ -36,10 +33,13 @@ TEST_CASE_9 = """7
 7 3"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_0, 4),
-    (TEST_CASE_5, 1),
-    (TEST_CASE_9, 5),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (TEST_CASE_0, 4),
+        (TEST_CASE_5, 1),
+        (TEST_CASE_9, 5),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution

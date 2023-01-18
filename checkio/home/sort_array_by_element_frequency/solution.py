@@ -3,7 +3,7 @@ from collections import defaultdict
 
 def sort_key(frequency_map, first_appeared_map):
     def _sort_key(item):
-        """ when list.sort is called on a list of tuples,
+        """when list.sort is called on a list of tuples,
         the sort order is determined by the 0th element of each
         tuple. If two tuples have the same 0th element, then the
         1st element of each is used to sort among them, and so on
@@ -18,6 +18,7 @@ def sort_key(frequency_map, first_appeared_map):
         which *decreases* as the first-appeared index increases
         """
         return frequency_map[item], -first_appeared_map[item]
+
     return _sort_key
 
 

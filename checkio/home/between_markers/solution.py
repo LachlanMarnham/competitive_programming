@@ -10,4 +10,4 @@ def between_markers(text: str, begin: str, end: str) -> str:
     if end_idx == -1:
         end_idx = None
 
-    return text[begin_idx: end_idx]
+    return text[begin_idx:end_idx]

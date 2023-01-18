@@ -39,10 +39,13 @@ beetroot
 sandals"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_0, ['YES', 'NO']),
-    (TEST_CASE_6, ['NO', 'YES', 'YES', 'NO']),
-    (TEST_CASE_7, ['YES', 'NO']),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (TEST_CASE_0, ["YES", "NO"]),
+        (TEST_CASE_6, ["NO", "YES", "YES", "NO"]),
+        (TEST_CASE_7, ["YES", "NO"]),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution

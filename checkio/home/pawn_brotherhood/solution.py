@@ -2,8 +2,8 @@ def _get_safe_positions(pawns: set) -> set:
     LABEL_COORDINATE_MAP = {}
     COORDINATE_LABEL_MAP = {}
 
-    for f_idx, file in enumerate('abcdefgh'):
-        for r_idx, rank in enumerate('12345678'):
+    for f_idx, file in enumerate("abcdefgh"):
+        for r_idx, rank in enumerate("12345678"):
             label = file + rank
             coordinate = (f_idx, r_idx)
             LABEL_COORDINATE_MAP[label] = coordinate

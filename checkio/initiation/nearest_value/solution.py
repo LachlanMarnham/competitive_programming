@@ -13,11 +13,7 @@ def nearest_value(values: set, target: int) -> int:
         # We want the number closest to target. But if two
         # numbers have the same distance to target, we should
         # pick the lesser of the two.
-        should_update = (
-            val_distance < candidate_distance or
-            val_distance == candidate_distance and
-            val < candidate
-        )
+        should_update = val_distance < candidate_distance or val_distance == candidate_distance and val < candidate
 
         if should_update:
             candidate = val

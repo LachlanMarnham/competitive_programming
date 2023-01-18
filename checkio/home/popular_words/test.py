@@ -12,11 +12,11 @@ def test():
     When I was Two
     I was nearly new
     """
-    words = ['i', 'was', 'three', 'near']
+    words = ["i", "was", "three", "near"]
     solution = {
-        'i': 4,
-        'was': 3,
-        'three': 0,
-        'near': 0,
+        "i": 4,
+        "was": 3,
+        "three": 0,
+        "near": 0,
     }
     checkio_main(text, words, solution)

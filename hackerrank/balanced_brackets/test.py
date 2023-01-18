@@ -29,10 +29,13 @@ TEST_CASE_20 = """3
 {(([])[])[]}[]"""
 
 
-@pytest.mark.parametrize('test_case, solution', [
-    (TEST_CASE_18, ['YES', 'NO', 'YES']),
-    (TEST_CASE_19, ['YES', 'NO']),
-    (TEST_CASE_20, ['YES', 'NO', 'YES']),
-])
+@pytest.mark.parametrize(
+    "test_case, solution",
+    [
+        (TEST_CASE_18, ["YES", "NO", "YES"]),
+        (TEST_CASE_19, ["YES", "NO"]),
+        (TEST_CASE_20, ["YES", "NO", "YES"]),
+    ],
+)
 def test(test_case, solution):
     assert hackerrank_main(test_case) == solution

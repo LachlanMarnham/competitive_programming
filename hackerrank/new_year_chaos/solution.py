@@ -8,7 +8,7 @@ def minimum_bribes(q):
         # are indexed-1). If they differ by more than
         # 2, too many bribes have been paid
         if q[i] - i - 1 > 2:
-            return 'Too chaotic'
+            return "Too chaotic"
 
         # Every time we find a person with a higher
         # number standing in front of someone with
