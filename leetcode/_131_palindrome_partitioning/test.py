@@ -12,4 +12,8 @@ from .solution import Solution
 )
 def test(input, output):
     solver = Solution()
-    assert solver.partition(input) == output
+    result = solver.partition(input)
+    # Just to make it order agnostic
+    result = {tuple(val) for val in result}
+    expected_result = {tuple(val) for val in output}
+    assert result == expected_result
