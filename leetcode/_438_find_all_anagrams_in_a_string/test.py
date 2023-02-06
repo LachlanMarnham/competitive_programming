@@ -12,4 +12,4 @@ from .solution import Solution
 )
 def test(s, p, output):
     tester = Solution()
-    assert tester.findAnagrams(s, p) == output
+    assert tester.find_anagrams(s, p) == output
