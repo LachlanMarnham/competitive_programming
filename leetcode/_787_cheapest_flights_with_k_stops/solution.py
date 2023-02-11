@@ -1,6 +1,7 @@
+import heapq
 from collections import defaultdict
 from dataclasses import dataclass
-import heapq
+from typing import List
 
 
 @dataclass
@@ -25,7 +26,7 @@ class Graph:
         self._neighbours = defaultdict(list)
 
     @classmethod
-    def from_flights(cls, flights: List[List[int]]) -> 'Graph':
+    def from_flights(cls, flights: List[List[int]]) -> "Graph":
         self = cls()
         for src, dest, price in flights:
             flight = Flight(src=src, dest=dest, price=price)
@@ -48,7 +49,7 @@ class PriorityQueue(object):
 
 
 class Solution:
-    def findCheapestPrice(self, n, flights, src, dst, k):
+    def find_cheapest_price(self, flights, src, dst, k):
         visited = {}
         graph = Graph.from_flights(flights)
         pq = PriorityQueue()
@@ -62,6 +63,6 @@ class Solution:
                 visited[node] = stops
                 neighbours = graph._neighbours[node]
                 for neighbour in neighbours:
-                    new_item = QueueItem(node=neighbour.dest, stops=stops+1, price=cost+neighbour.price)
+                    new_item = QueueItem(node=neighbour.dest, stops=stops + 1, price=cost + neighbour.price)
                     pq.push(new_item)
         return -1
