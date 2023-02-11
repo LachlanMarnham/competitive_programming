@@ -7,10 +7,10 @@ class TreeNode:
         self.left = left
         self.right = right
 
-    def _create_binary_tree(self, data: list, index: int) -> 'TreeNode':
+    def _create_binary_tree(self, data: list, index: int) -> "TreeNode":
         node = None
         if index < len(data):
-            if data[index] == None:
+            if data[index] is None:
                 return
             node = TreeNode(data[index])
             node.left = self._create_binary_tree(data, 2 * index + 1)
