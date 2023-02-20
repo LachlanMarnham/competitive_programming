@@ -6,6 +6,7 @@ tests:
 	pytest
 
 check-style:
+	python format_sql.py ./SQL
 	isort . -c
 	black .
 	flake8
