@@ -16,4 +16,3 @@ SELECT company.company_code,
  GROUP BY company.company_code,
           company.founder
  ORDER BY company.company_code ASC;
- 
